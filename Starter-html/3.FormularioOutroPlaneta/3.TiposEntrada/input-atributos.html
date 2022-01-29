@@ -1,0 +1,55 @@
+<!--
+    <input> Atributos comuns
+    - autocomplete
+    - autofocus
+    - disabled
+    - readonly (quase todos)
+    - value
+    - form (quase todos)
+    - name
+    - required (quase todos)
+    - placeholder (password, search, tel, text, url)
+
+    O label serve para acessibilidade
+-->
+<p>Autocomplete com email de exemplo:</p>
+<input type="text" autocomplete="email">
+
+<hr>
+
+<p>Com autofocus:</p>
+<input type="type" autofocus>
+
+<hr>
+<p>Com disabled:</p>
+<input type="type" disabled>
+<br>
+<p>Disabled com valor:</p>
+<input type="type" value="qualquer " disabled>
+
+<hr>
+
+<p>Com readonly:</p>
+<input type="type" value="texto" readonly>
+
+<hr>
+
+<p>Com atributo for:</p>
+<form id="meu-form"></form>
+<input name="email" type="email" form="meu-form">
+
+<hr>
+
+<p>Com required:</p>
+<input type="type" required>
+
+<hr>
+
+<p>Com placeholder:</p>
+<input type="email" placeholder="Digite seu e-mail">
+<br>
+<p>Placoholder com label(acessibilidade)</p>
+
+<label for="email">E-mail:</label>
+<input type="email" type="email"
+placeholder="Digite seu e-mail">
