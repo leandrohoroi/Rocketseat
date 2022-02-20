@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label><br>
+            <input id="nome" type="text" name="nome" size="20"><br><br>
+
+            <label for="sobrenome">Sobrenome
+            </label><br>
+            <input id="sobrenome" type="text" name="sobrenome" size="50"><br><br>
+
+            <label for="nascimento">Data de Nascimento</label><br>
+            <input type="date" name="nascimento" id="nascimento"><br><br>
+
+            <label for="nomemae">Nome da Mãe</label><br>
+            <input id="nomemae" type="text" name="nomemae" size="50">
+
+            <br><br>
+
+            <label for="nomepai">Nome do Pai</label><br>
+            <input id="nomepai" type="text" name="nomepai" size="50">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="rua">Rua</label><br>
+            <input id="rua" type="text" name="rua" placeholder="Digite sua Rua" size="50">
+
+            <br><br>
+
+            <label for="numero">Número</label><br>
+            <input id="numero" type="number" name="numero" minlength="0" maxlength="999" size="3">
+
+            <br><br>
+
+            <label for="cidade">Estado</label><br>
+            <select name="estado">
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="rj">Rio de Janeiro</option>
+            </select>
+            <br><br>
+            <label for="cidade">Cidade</label><br>
+            <input type="text" list="cidade">
+            <datalist id="cidade">
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="rj">Rio de Janeiro</option>
+            </datalist>
+
+            <br><br>
+            
+            <label for="complemento">Complemento</label><br>
+            <input id="complemento" type="text" type="complemento">
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
